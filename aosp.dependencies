@@ -5,6 +5,12 @@
    "branch": "eleven",
    "remote": "PixelExperience"
  },
+ {
+   "remote": "palladiumos",
+   "repository": "vendor_gapps",
+   "target_path": "vendor/gapps",
+   "branch": "11"
+ },
 {
    "repository": "motorola_timeweather",
    "target_path": "packages/apps/TimeWeather",

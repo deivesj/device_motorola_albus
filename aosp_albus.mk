@@ -27,6 +27,14 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_NAME := aosp_albus
 PRODUCT_DEVICE := albus
 PRODUCT_MODEL := Moto Z2 Play
+PRODUCT_RELEASE_NAME := albus
+
+#Gapps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)
+
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
