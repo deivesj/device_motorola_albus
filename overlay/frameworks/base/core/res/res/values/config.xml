@@ -33,4 +33,51 @@
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- various functions for use by some roms like RR for example. -->
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+   <!-- Enable face auth when swiping security view  
+        for popup cameras-->
+   <bool name="config_faceAuthOnSecurityView">true</bool>
+
+   <!-- Whether device has warp charging support -->
+   <bool name="config_hasWarpCharger">true</bool>
+
+   <!-- Whether device has Dash charging support -->
+   <bool name="config_hasDashCharger">true</bool>
+
+   <!-- Whether device has VOOC charging support -->
+   <bool name="config_hasVoocCharger">false</bool>
+
+   <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+   <string name="config_oemFastChargerStatusPath" translatable="false"></string>
+   <!-- Expected value from fast charging status file  -->
+   <string name="config_oemFastChargerStatusValue" translatable="false"></string>
+
+   <!-- Whether device supports variable refresh rate -->
+   <bool name="config_hasVariableRefreshRate">true</bool>
+   <!-- Default setting for refresh rate
+        0 = Auto
+        1 = 60HZ
+        2 = 90Hz -->
+   <integer name="config_defaultVariableRefreshRateSetting">2</integer>
+
+   <!--Systeminfo for quick settings header -->
+   <string name="config_sysCPUTemp">/sys/devices/virtual/thermal/thermal_zone0/temp</string>
+   <string name="config_sysBatteryTemp">/sys/devices/soc/qpnp-smbcharger-17/power_supply/battery/temp</string>
+   <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+   <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+   <integer name="config_sysCPUTempMultiplier">1000</integer>
+   <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+   <!-- If Smart charging supported by kernel and device sepolicy -->
+   <bool name="config_smartChargingAvailable">true</bool>
+
+<!-- Whether device has Turbo power charging support -->
+    <bool name="config_hasTurboPowerCharger">true</bool>
 </resources>

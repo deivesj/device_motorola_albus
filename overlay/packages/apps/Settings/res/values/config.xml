@@ -24,4 +24,14 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <!-- various functions for use by some roms like RR for example. -->
+    <!-- Use only if devices have variable intensity support for haptics-->
+    <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <!-- If device supports battery health options -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batChargeCycle">/sys/devices/soc/qpnp-fg-18/power_supply/bms/cycle_count</string>
+    <string name="config_batDesCap">/sys/devices/soc/qpnp-fg-18/power_supply/bms/charge_full_design</string>
+    <string name="config_batCurCap">/sys/devices/soc/qpnp-fg-18/power_supply/bms/charge_now_raw</string>
+
 </resources>
