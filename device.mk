@@ -113,5 +113,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_camera
 
+# Moto TimeWeather
+PRODUCT_PACKAGES += \
+    TimeWeather
+
 # Inherit from motorola msm8953-common
 $(call inherit-product, device/motorola/msm8953-common/msm8953.mk)
