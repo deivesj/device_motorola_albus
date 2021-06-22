@@ -1,13 +1,27 @@
 [
-  {
-    "repository": "device_motorola_msm8953-common",
-    "target_path": "device/motorola/msm8953-common",
-    "branch": "eleven"
+{
+   "repository": "packages_resources_devicesettings-custom",
+   "target_path": "packages/resources/devicesettings-custom",
+   "branch": "eleven",
+   "remote": "PixelExperience"
+ },
+ {
+    "repository": "LineageOS/android_system_qcom",
+    "target_path": "system/qcom",
+    "branch": "lineage-18.1",
+    "remote": "github"
   },
   {
-    "remote": "pixel-devices-blobs",
-    "repository": "vendor_motorola_albus",
-    "target_path": "vendor/motorola/albus",
-    "branch": "eleven"
+    "repository": "LineageOS/android_external_bson",
+    "target_path": "external/bson",
+    "branch": "lineage-18.1",
+    "remote": "github"
+  },
+  {
+    "repository": "LineageOS/android_packages_apps_FMRadio",
+    "target_path": "packages/apps/FMRadio",
+    "branch": "lineage-18.1",
+    "remote": "github"
   }
 ]
+
