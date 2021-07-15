@@ -62,5 +62,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-mods/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy-mods/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/vendor
 
+
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # inherit from the proprietary version
 -include vendor/motorola/albus/BoardConfigVendor.mk
