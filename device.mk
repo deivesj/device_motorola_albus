@@ -89,7 +89,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.albus.rc \
     init.gbmods.sh \
-    init.mmi.laser.sh
+    init.mmi.laser.sh \
+    init.spectrum.rc \
+    init.spectrum.sh
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
